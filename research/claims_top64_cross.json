@@ -1,0 +1,683 @@
+{
+  "meta": {
+    "top64_count": 1,
+    "claims_count": 76,
+    "top_archetypes": [
+      [
+        "Tempo Midrange",
+        1
+      ]
+    ],
+    "note": "support_from_top64 depends on available verified volume in research_base."
+  },
+  "light_advisor": {
+    "max_recommendations": 5,
+    "eligible_confidence": [
+      "high",
+      "medium"
+    ],
+    "recommendations": [
+      {
+        "topic_tag": "matchup",
+        "topic": "Deck cohesion",
+        "claim": "Eviter les cartes « bonnes seules » qui ne servent ni le plan A ni les matchups prioritaires.",
+        "confidence": "medium",
+        "evidence_type": "expert_review",
+        "support_from_top64": "low"
+      },
+      {
+        "topic_tag": "general",
+        "topic": "Tuning cadence",
+        "claim": "Documenter chaque changement + hypothèse + résultat pour éviter la dérive de tuning.",
+        "confidence": "medium",
+        "evidence_type": "expert_review",
+        "support_from_top64": "low"
+      },
+      {
+        "topic_tag": "general",
+        "topic": "Test discipline",
+        "claim": "Les sessions test les plus utiles suivent un protocole stable et un journal de résultats.",
+        "confidence": "medium",
+        "evidence_type": "expert_review",
+        "support_from_top64": "low"
+      },
+      {
+        "topic_tag": "matchup",
+        "topic": "Meta interpretation",
+        "claim": "Confronter ressenti de ladder avec data tournoi avant tout changement majeur.",
+        "confidence": "medium",
+        "evidence_type": "expert_review",
+        "support_from_top64": "low"
+      },
+      {
+        "topic_tag": "matchup",
+        "topic": "Cut/Add rationale",
+        "claim": "Exiger une justification mesurable (probabilité, courbe, MU) pour chaque cut/add.",
+        "confidence": "medium",
+        "evidence_type": "methodological",
+        "support_from_top64": "low"
+      }
+    ]
+  },
+  "premium_advisor": {
+    "max_recommendations": 12,
+    "eligible_confidence": [
+      "high"
+    ],
+    "require_support": [
+      "medium",
+      "high"
+    ],
+    "recommendations": []
+  },
+  "crossed_claims": [
+    {
+      "topic_tag": "matchup",
+      "topic": "Deck cohesion",
+      "claim": "Eviter les cartes « bonnes seules » qui ne servent ni le plan A ni les matchups prioritaires.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Tuning cadence",
+      "claim": "Documenter chaque changement + hypothèse + résultat pour éviter la dérive de tuning.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Test discipline",
+      "claim": "Les sessions test les plus utiles suivent un protocole stable et un journal de résultats.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Meta interpretation",
+      "claim": "Confronter ressenti de ladder avec data tournoi avant tout changement majeur.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Cut/Add rationale",
+      "claim": "Exiger une justification mesurable (probabilité, courbe, MU) pour chaque cut/add.",
+      "confidence": "medium",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Redundancy management",
+      "claim": "La redondance fonctionnelle est positive tant qu'elle ne détruit pas la flexibilité matchup.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Greedy builds warning",
+      "claim": "Les listes trop greed punissent la constance en rounds longs, même si plafond théorique élevé.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "mulligan",
+      "topic": "Pre-event checklist",
+      "claim": "Valider avant tournoi: légalité, plan mulligan, plan MU top3, et side notes de pivot.",
+      "confidence": "medium",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Archetype performance",
+      "claim": "Prioriser les conclusions issues d'échantillons Top64 multi-tournois plutôt qu'un seul event.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Lineup trends",
+      "claim": "Comparer conversion Top64->Top8 par archetype pour éviter les faux signaux de popularité.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Patch adaptation",
+      "claim": "Séparer les conclusions par patch (Spiritforged uniquement) avant d'ajuster les ratios d'une liste.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Data hygiene",
+      "claim": "Ne retenir que les listes avec decklist + bracket vérifiables pour alimenter un moteur de recommandation.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Probability planning",
+      "claim": "Utiliser les probabilités hypergéométriques pour fixer les counts minimaux des packages clés.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Plan de jeu",
+      "claim": "Construire d'abord autour d'un plan A clair puis vérifier que chaque slot sert ce plan.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Core vs flex",
+      "claim": "Définir le noyau inamovible avant d'itérer les slots flex améliore la qualité de test.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "curve",
+      "topic": "Curve management",
+      "claim": "Une courbe early insuffisante dégrade fortement la qualité des mains keepables.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Meta share",
+      "claim": "Mesurer à la fois popularité (meta share) et performance (winrate/conversion).",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Matchup focus",
+      "claim": "Prioriser les optimisations sur les matchups les plus fréquents du field ciblé.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Testing protocol",
+      "claim": "Tester en blocs de changements limités (1-3 slots) pour isoler les effets réels.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "mulligan",
+      "topic": "Mulligan discipline",
+      "claim": "Formaliser des règles de mulligan par matchup apporte plus de gain que des micro-ajustements non testés.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Archetype matchup map",
+      "claim": "Consolider les MU par archétype avec seuil minimum de matchs avant conclusions fortes.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Sample quality",
+      "claim": "Refuser les recommandations « fortes » si n est sous seuil défini.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Matchup planning",
+      "claim": "Préparer un plan par matchup évite les inclusions situationnelles excessives.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Metagame positioning",
+      "claim": "Choisir un deck bien positionné est souvent plus rentable que forcer des tech cards extrêmes.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Contextual tuning",
+      "claim": "Une liste performante sans contexte méta est insuffisante pour décider des slots.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Patch deltas",
+      "claim": "Réévaluer les benchmarks de courbe et densités après chaque patch majeur.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Conversion metric",
+      "claim": "Suivre Top64->Top16->Top8 pour distinguer decks « populaires » des decks « gagnants ».",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Role density",
+      "claim": "Tagger les cartes par rôle (starter/payoff/interaction) pour contrôler redondance et trous de plan.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "curve",
+      "topic": "Curve targets",
+      "claim": "Définir des cibles de courbe par archétype avant d'évaluer les synergies.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Verification status",
+      "claim": "Marquer verified/unverified/conflicting avant tout usage de recommandations.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "mulligan",
+      "topic": "Opening hand quality",
+      "claim": "Une main moyenne qui exécute le plan bat souvent une main « puissante » incohérente.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Consistency first",
+      "claim": "Limiter les one-of purement théoriques tant que les fondamentaux ne sont pas stabilisés.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "pairing",
+      "topic": "Legend-champion pairing",
+      "claim": "Suivre les pairings légende/champion réellement performants plutôt que les préférences individuelles.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Pilot effect",
+      "claim": "Annoter les résultats des tops players pour éviter de surestimer un deck pilot-dependent.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Open meta tuning",
+      "claim": "En open field, favoriser les cartes polyvalentes et réduire les cartes narrow.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Statistical caution",
+      "claim": "Ne pas conclure sur un winrate sans contexte de variance et taille d'échantillon.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Weekly drift",
+      "claim": "Mesurer la dérive hebdo des archétypes pour détecter les recommandations périmées.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Tech card realism",
+      "claim": "Valider les tech cards via occurrences répétées sur plusieurs majors, pas un seul top.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Decision quality",
+      "claim": "La meilleure liste est celle que tu maîtrises + qui reste bien positionnée méta.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Pattern coherence",
+      "claim": "Prioriser la répétabilité des patterns gagnants plutôt que la puissance brute isolée.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Outlier filtering",
+      "claim": "Traiter séparément les outliers (runs exceptionnels) avant de modifier les recommandations globales.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Matchup matrix",
+      "claim": "Construire la matrice MU sur matchs vérifiés uniquement et publier le n par cellule.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Iteration loop",
+      "claim": "Une boucle courte hypothèse->test->review sur 20-30 games réduit les erreurs de design.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Source reliability",
+      "claim": "Donner un poids max aux listes avec deckcode + event id + bracket public.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Package sizing",
+      "claim": "Calculer le nombre minimal de copies pour atteindre une proba-cible au tour visé.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Repeatability",
+      "claim": "Favoriser les patterns observés sur plusieurs events indépendants.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Pairing consistency",
+      "claim": "Écarter les pairings légende/champion à faible fréquence sauf preuve forte de performance.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Plan B fallback",
+      "claim": "Préparer des lignes de pivot (plan B) avant même la sélection finale des 39 cartes.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "curve",
+      "topic": "Tempo integrity",
+      "claim": "Ne pas casser la courbe pour inclure des cartes puissantes hors-plan.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Tournament scope",
+      "claim": "Séparer les résultats major des events mineurs pour éviter les biais de niveau.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Patch segmentation",
+      "claim": "Interdire l'agrégation multi-patch sans pondération explicite.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Confidence labeling",
+      "claim": "Associer chaque insight à un niveau de confiance et au volume d'échantillon.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Testing allocation",
+      "claim": "Allouer la majorité des tests aux 3 matchups les plus joués estimés.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Recommendation confidence",
+      "claim": "Ne monter une recommandation en priorité haute qu'avec score ET confiance suffisants.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Spiritforged benchmark",
+      "claim": "Fixer des benchmarks de référence par archétype sur Spiritforged avant tout comparatif deck-vs-field.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Version tracking",
+      "claim": "Comparer les versions successives avec impact estimé plutôt que snapshots isolés.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Major consistency",
+      "claim": "Ne tirer des conclusions structurelles que depuis des majors vérifiés avec patch explicite.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Meta segmentation",
+      "claim": "Segmenter les performances par archétype ET pairing légende/champion avant recommandations.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Bracket integrity",
+      "claim": "Exclure les résultats sans bracket public lorsqu'on calcule la matrice matchup.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "data_quality",
+      "topic": "Sample sizing",
+      "claim": "Définir des seuils de confiance différents pour signaux de winrate et signaux de consistance.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Field realism",
+      "claim": "Construire les gauntlets de test selon la distribution réelle du field attendu.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Slot coherence",
+      "claim": "Un slot doit améliorer un pattern de victoire identifié, pas seulement la puissance brute.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "curve",
+      "topic": "Patch window",
+      "claim": "Limiter les analyses aux événements dans la même fenêtre patch pour éviter la dérive temporelle.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Repeat performers",
+      "claim": "Poids supplémentaire pour les patterns reproduits par plusieurs joueurs indépendants.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Baseline targets",
+      "claim": "Maintenir des cibles de ratio par archétype issues des listes top perf.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Evidence loop",
+      "claim": "Documenter hypothèse, changement, métrique cible et résultat avant de conserver un slot.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Stability index",
+      "claim": "Considérer stables seulement les archétypes avec conversion positive sur plusieurs week-ends.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "MU confidence",
+      "claim": "Publier n et intervalle de confiance par cellule matchup avant recommandation premium.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Pilot adjustment",
+      "claim": "Ajuster l'interprétation WR avec le facteur compétence des joueurs récurrents.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Turn targets",
+      "claim": "Définir des objectifs de probabilité par tour pour les packages critiques.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Overfit prevention",
+      "claim": "Ne jamais casser la structure d'un deck sur la base d'un seul résultat tournoi.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "consistency",
+      "topic": "Iteration discipline",
+      "claim": "Limiter le nombre de variables modifiées entre deux versions comparées.",
+      "confidence": "high",
+      "evidence_type": "expert_review",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Deckcode validity",
+      "claim": "Marquer invalides les analyses sans deckcode complet et checksum lisible.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Drift alerts",
+      "claim": "Déclencher une révision de recommandations si la méta dérive au-delà d'un seuil défini.",
+      "confidence": "high",
+      "evidence_type": "data_backed",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "matchup",
+      "topic": "Pairing floor",
+      "claim": "N'analyser les pairings légende/champion qu'au-dessus d'un minimum de fréquence.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    },
+    {
+      "topic_tag": "general",
+      "topic": "Playable hand metric",
+      "claim": "Suivre la part de mains réellement jouables plutôt que la seule moyenne de puissance des cartes.",
+      "confidence": "high",
+      "evidence_type": "methodological",
+      "support_from_top64": "low"
+    }
+  ]
+}

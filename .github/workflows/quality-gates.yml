@@ -1,0 +1,28 @@
+name: quality-gates
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: JS tests
+        run: npm test
+      - name: Build research base
+        run: python scripts/prepare_research_base.py
+      - name: Production quality gate (strict)
+        run: |
+          python scripts/check_research_quality.py \
+            --enforce \
+            --min-top64 200 \
+            --min-claims 50 \
+            --max-low-confidence-ratio 0.30
