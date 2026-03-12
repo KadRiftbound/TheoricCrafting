@@ -1,0 +1,2 @@
+tournament_name,tournament_tier,date,patch,placement,player,archetype,legend,chosen_champion,battlefield,decklist_source_url,vod_or_bracket_url,verification_status,notes,source_site
+Example Major,major,2026-01-01,Spiritforged,1,PlayerA,Tempo Midrange,Legend X,Champion X,Battlefield X,https://example.com/deck,https://example.com/bracket,unverified,Template row,unknown
