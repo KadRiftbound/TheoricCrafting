@@ -5,12 +5,3 @@
 
 # Optional local dumps
 /docs/rules/*.pdf
-
-# Local folders/files user asked to keep out of repo
-DataSite/
-**/DataSite/
-Fichier Important/
-**/Fichier Important/
-datasite/
-**/datasite/
-**/Fichier_Important/
